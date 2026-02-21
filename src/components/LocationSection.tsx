@@ -9,9 +9,10 @@ const LocationSection: React.FC = () => {
                 <img
                     src="https://images.unsplash.com/photo-1578474843222-274480829374?q=80&w=2670&auto=format&fit=crop"
                     alt="Storefront Night"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-rinka-black via-rinka-black/90 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-rinka-black via-rinka-black/90 to-transparent pointer-events-none" />
             </div>
 
             <div className="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
@@ -22,7 +23,7 @@ const LocationSection: React.FC = () => {
 
                     <div className="space-y-6 font-serif">
                         <div className="flex items-start gap-4">
-                            <MapPin className="text-rinka-red mt-1" />
+                            <MapPin className="text-rinka-red mt-1 flex-shrink-0 w-6 h-6" />
                             <div>
                                 <p className="text-lg font-bold text-rinka-white">博多本店</p>
                                 <p className="text-rinka-white/70">〒810-0001 福岡県福岡市中央区天神 2-1-1</p>
@@ -30,7 +31,7 @@ const LocationSection: React.FC = () => {
                         </div>
 
                         <div className="flex items-start gap-4">
-                            <Clock className="text-rinka-red mt-1" />
+                            <Clock className="text-rinka-red mt-1 flex-shrink-0 w-6 h-6" />
                             <div>
                                 <p className="text-lg font-bold text-rinka-white">営業時間</p>
                                 <p className="text-rinka-white/70">晝 11:00 - 15:00</p>
@@ -40,7 +41,7 @@ const LocationSection: React.FC = () => {
                         </div>
 
                         <div className="flex items-start gap-4">
-                            <Phone className="text-rinka-red mt-1" />
+                            <Phone className="text-rinka-red mt-1 flex-shrink-0 w-6 h-6" />
                             <div>
                                 <p className="text-lg font-bold text-rinka-white">電話</p>
                                 <p className="text-rinka-white/70 tracking-widest">092-123-4567</p>
@@ -49,7 +50,7 @@ const LocationSection: React.FC = () => {
                     </div>
 
                     <div className="mt-8 pt-8 border-t border-rinka-white/10">
-                        <button className="px-8 py-3 bg-rinka-red text-rinka-white font-serif tracking-widest hover:bg-rinka-red-dark transition-colors duration-300 w-full md:w-auto">
+                        <button className="px-8 py-3 bg-rinka-red text-rinka-white font-serif tracking-widest hover:bg-rinka-red-dark transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rinka-red focus:ring-offset-2 focus:ring-offset-rinka-black rounded-sm w-full md:w-auto">
                             Google Map
                         </button>
                     </div>
@@ -60,8 +61,9 @@ const LocationSection: React.FC = () => {
                     {/* 這裡通常放 Google Map iframe，這邊用圖片示意 */}
                     <img
                         src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=2670&auto=format&fit=crop"
-                        alt="Map Preview"
-                        className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-500"
+                        alt="Map Area Preview"
+                        loading="lazy"
+                        className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-300"
                     />
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                         <span className="text-rinka-white/80 font-serif tracking-widest bg-rinka-black/60 px-4 py-2">MAP PREVIEW</span>

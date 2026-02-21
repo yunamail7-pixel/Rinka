@@ -23,6 +23,7 @@ const CraftsmanSection: React.FC = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1542351967-d5ae722fed71?q=80&w=2666&auto=format&fit=crop"
                                 alt="Ramen Craftsman"
+                                loading="lazy"
                                 className="w-full h-full object-cover filter sepia-[.3] contrast-125 transition-all duration-700 hover:sepia-0"
                             />
                         </motion.div>

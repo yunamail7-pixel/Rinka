@@ -24,7 +24,7 @@ const MenuSection: React.FC = () => {
                     <p className="text-rinka-beige/60 font-serif tracking-widest">獻給懂味道的您</p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
                     {MENU_ITEMS.map((item, index) => (
                         <motion.div
                             key={item.id}
@@ -32,7 +32,8 @@ const MenuSection: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(0,0,0,0.3)" }}
-                            className="relative bg-rinka-beige h-64 md:h-80 border-4 border-rinka-wood/30 shadow-lg flex flex-col items-center justify-between py-8 cursor-pointer group rounded-sm"
+                            className="relative bg-rinka-beige h-64 md:h-80 border-4 border-rinka-wood/30 shadow-lg flex flex-col items-center justify-between py-8 cursor-pointer group rounded-sm focus:outline-none focus:ring-4 focus:ring-rinka-red"
+                            tabIndex={0}
                             style={{
                                 backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px)`,
                                 backgroundSize: '100% 4px'

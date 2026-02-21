@@ -10,6 +10,7 @@ const HeroSection: React.FC = () => {
                 <img
                     src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?q=80&w=2070&auto=format&fit=crop"
                     alt="Hakata Ramen"
+                    fetchPriority="high"
                     className="h-full w-full object-cover opacity-80"
                 />
             </div>

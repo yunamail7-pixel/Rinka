@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="flex space-x-8">
-                    <a href="#" className="hover:text-rinka-red transition-colors"><Instagram size={20} /></a>
-                    <a href="#" className="hover:text-rinka-red transition-colors"><Twitter size={20} /></a>
-                    <a href="#" className="hover:text-rinka-red transition-colors"><Facebook size={20} /></a>
+                    <a href="#" aria-label="Instagram" className="hover:text-rinka-red transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rinka-red rounded-sm"><Instagram size={20} /></a>
+                    <a href="#" aria-label="Twitter" className="hover:text-rinka-red transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rinka-red rounded-sm"><Twitter size={20} /></a>
+                    <a href="#" aria-label="Facebook" className="hover:text-rinka-red transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-rinka-red rounded-sm"><Facebook size={20} /></a>
                 </div>
 
                 <div className="text-xs tracking-widest mt-8">
